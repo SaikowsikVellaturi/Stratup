@@ -5,12 +5,25 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <script>
+function chbx(obj)
+{
+var that = obj;
+   if(document.getElementById(that.id).checked == true) 
+   {
+      document.getElementById('cb').checked = false;
+      document.getElementById('cb1').checked = false;
+      document.getElementById('cb2').checked = false;
+      document.getElementById(that.id).checked = true;
+   }
+}
+</script>
   
   <div id="vanta-canvas">
     <div class="wrapper">
         <div class="title-text">
-          <div class="title login">Login Form</div>
-  <div class="title signup">Signup Form</div>
+          <div class="title login">Login</div>
+  <div class="title signup">Signup</div>
   </div>
   <div class="form-container">
           <div class="slide-controls">
@@ -18,8 +31,7 @@
             <input type="radio" name="slide" id="signup">
             <label for="login" class="slide login">Login</label>
             <label for="signup" class="slide signup">Signup</label>
-            <div class="slider-tab">
-  </div>
+            <div class="slider-tab"></div>
   </div>
   <div class="form-inner">
             <form action="#" class="login">
@@ -36,8 +48,6 @@
   </div>
   <input type="submit" value="Login">
               </div>
-  <!-- <div class="signup-link">
-  Not a member? <a href="">Signup now</a></div> -->
   </form>
   <form action="#" class="signup">
     <table>
@@ -45,9 +55,6 @@
             <div class="field"><input type="text" placeholder="First Name" required></div></td>
         <td><div class="field"> <input type="text" placeholder="Last Name" required></div>
                </td></table>
-
- 
-      
             
                <div class="field">
                 <input type="text" placeholder="Create Username" required>
@@ -66,10 +73,14 @@
               </div>
               <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> <a href="#"
               style="color: rgb(248, 245, 245); text-decoration: none;">I Agree Terms &
-              Conditions</a>
+              Conditions</a><br>
+              <input type="checkbox" id="cb" name="sex" value="male" onclick="chbx(this)" > Male
+  <input type="checkbox" id="cb1" name="sex" value="female" onclick="chbx(this)"> Female
+  <input type="checkbox" id="cb2" name="sex" value="Choose not to say" onclick="chbx(this)"> Choose not to say
+
+              
   <div class="field btn">
-                <div class="btn-layer">
-  </div>
+                <div class="btn-layer"></div>
   <input type="submit" value="Signup">
               </div>
     
