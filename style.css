@@ -235,7 +235,7 @@ form .btn input[type="submit"]
    overflow: hidden; 
    place-items: center;
    max-width: 100%;
-   padding: 10% 10% 10%;
+   padding: 50% 50% 50%;
   background: rgb(0 0 0 / 10%); 
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
