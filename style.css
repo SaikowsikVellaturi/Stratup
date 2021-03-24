@@ -21,9 +21,9 @@ html,body
 .wrapper
 {
   overflow: hidden;
-  max-width: 30%;
+  max-width: 50%;
   background: rgb(0 0 0 / 10%);
-  padding: 30px;
+  padding: 3% 10% 10%;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
 }
@@ -214,17 +214,14 @@ form .btn input[type="submit"]
   #vanta-canvas
   {
     width:100%;
-    height: 100vh;
+    height: 100%;
     background:none;
+    display: center;
+    /* padding: 50px ;  */
     color:#fff;
   }
-  @media (max-width: 360px)
+  @media (max-width: 800px)
   {
-    .wrapper
-    {
-      padding:30px;
-      max-width:100%;
-    }
     html,body
 {
   display: grid;
@@ -233,4 +230,22 @@ form .btn input[type="submit"]
   place-items: center;
   background: none;
 }
+    .wrapper
+{
+   overflow: hidden; 
+   place-items: center;
+   max-width: 100%;
+   padding: 10% 10% 10%;
+  background: rgb(0 0 0 / 10%); 
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.form-inner form .field
+{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+    
   }
