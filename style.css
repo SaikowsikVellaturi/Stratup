@@ -225,4 +225,12 @@ form .btn input[type="submit"]
       padding:30px;
       max-width:100%;
     }
+    html,body
+{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: none;
+}
   }
