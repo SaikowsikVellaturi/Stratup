@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Document</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="index2.css"/>
 </head>
 <body>
     <script>
@@ -22,8 +22,8 @@ var that = obj;
   <div id="vanta-canvas">
     <div class="wrapper">
         <div class="title-text">
-          <div class="title login">Login</div>
-  <div class="title signup">Signup</div>
+         <div class="title login">Login</div> 
+  <div class="title signup">Signup</div> 
   </div>
   <div class="form-container">
           <div class="slide-controls">
@@ -41,8 +41,9 @@ var that = obj;
   <div class="field">
                 <input type="password" placeholder="Password" required>
               </div>
+              
   <div class="pass-link">
-  <a href="#">Forgot password?</a></div>
+  <div class="forgot"><a href="#">Forgot password?</a></div></div>
   <div class="field btn">
                 <div class="btn-layer">
   </div>
@@ -55,7 +56,11 @@ var that = obj;
             <div class="field"><input type="text" placeholder="First Name" required></div></td>
         <td><div class="field"> <input type="text" placeholder="Last Name" required></div>
                </td></table>
-            
+               <br>
+               <input type="checkbox" id="cb" name="sex" value="male" onclick="chbx(this)" > Male &nbsp
+               <input type="checkbox" id="cb1" name="sex" value="female" onclick="chbx(this)"> Female &nbsp
+               <input type="checkbox" id="cb2" name="sex" value="Choose not to say" onclick="chbx(this)"> Choose not to say
+             
                <div class="field">
                 <input type="text" placeholder="Create Username" required>
                  </div>
@@ -72,12 +77,8 @@ var that = obj;
                 <input type="password" placeholder="Confirm password" required>
               </div>
               <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> <a href="#"
-              style="color: rgb(248, 245, 245); text-decoration: none;">I Agree Terms &
-              Conditions</a><br>
-              <input type="checkbox" id="cb" name="sex" value="male" onclick="chbx(this)" > Male
-  <input type="checkbox" id="cb1" name="sex" value="female" onclick="chbx(this)"> Female
-  <input type="checkbox" id="cb2" name="sex" value="Choose not to say" onclick="chbx(this)"> Choose not to say
-
+              style="color: rgb(248, 245, 245); text-decoration: none;" required> I Agree <a href="#">Terms & Conditions</a><br>
+        
               
   <div class="field btn">
                 <div class="btn-layer"></div>
